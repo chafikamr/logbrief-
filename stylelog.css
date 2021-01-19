@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+.brand{
+  width: 100%;
+  height:80px;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  
+
+
+}
+.brand a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+  line-height: 80px;
+}
+body{
+    background-color: #F0F4F7;
+    margin: 0px;
+    padding: 0px;
+}
+
+.image-container{
+    width: 50%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    height: 600px;
+    float: left;
+}
+.image-container img{
+     width: 50%;
+     height: auto;
+
+}
+.login-container{
+	 width: 50%;
+    display: flex;
+    
+     display: flex;
+   justify-content: center;
+   align-items: center;
+    height: 600px;
+    float: left;
+
+
+}
+.singin-div{
+	width: 50%;
+	height: 80%;
+	box-shadow:  3px 3px 3px 0px #b8b8b8, -5px -4px 0px 0px #f7eded;;
+	box-sizing: border-box;
+   border-radius: 5px;
+    padding: 10px;
+     background-color: white;
+    
+
+
+}
+.singin-div span {
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	font-family: arial;
+	display: inline-block;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+}
+.singin-div input,label,button{
+	display: block;
+	width: 90%;
+	box-sizing: border-box;
+	margin-top: 10px;
+
+
+	
+	
+	
+
+}
+.singin-div input{
+    margin: auto;
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey
+}
+.singin-div label{
+   margin-bottom: 10px;
+   font-size: 15px;
+   font-family: arial;
+   font-weight: bold;
+   margin-left: 10px;
+}
+.singin-div a {
+	display: inline-block;
+	text-decoration: none;
+	color: grey;
+	margin-top: 10px;
+}
+.singin-div button {
+	display:block;
+	background-color: black;
+	color: white;
+	padding: 10px;
+	margin: auto;
+	width: 90%;
+	margin-top: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+.log button{
+	background-color: green;
+	margin-top: 20px;
+}
+footer{
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 60px;
+	color: white
+
+}
+
+@media (max-width:500px){
+	.image-container{
+		width: 100%;
+		height: auto;
+
+	}
+	.login-container{
+		width: 100%;
+	}
+	.singin-div{
+		width: 90%;
+	}
+}

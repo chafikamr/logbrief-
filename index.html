@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+    <style type="text/css">
+    	
+
+
+    	                 *{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #F0F4F7;
+    
+   
+
+
+ }
+
+  
+/* starting the header styling*/
+.header-container{
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    
+}
+.header-container h1{
+    padding: 0px;
+    margin: 0px;
+    font-size: 30px;;
+    
+}
+/* End The Header Styling*/
+/*start search styling*/
+.search-container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-inp-btn{
+    width: 300px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 0px grey,-1px -1px 0px 1px white;
+    
+}
+.search-inp-btn input[type=text],button{
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+    padding: 5px;
+    border: none;
+    outline: none;
+
+}
+.search-inp-btn input[type=text]{
+    background-color: #F2F2F2;
+    width: 80%;
+    padding-left: 20px;
+}
+.search-inp-btn button{
+   width: 20%;
+   background-color: black;
+   color: white;
+   
+
+}
+/* End Search styling */
+/* Card styling */
+.close {
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+    font-size: 62px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.custom-card{
+    width:150px;
+    position: relative;
+    height:200px;
+    background-color:#F0F4F7;
+    text-align: center;
+    box-shadow: 1px 1px 2px 0px grey,-1px -1px 0px 1px white;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 30px;
+   
+    border-radius: 10px}
+    .custom-card span{
+      margin-top: 20px;
+      display: inline-block;
+      font-weight: bold;
+      font-family: Arial
+    
+    }
+    .img-container{
+    
+      background-color: black;
+     width:100%;
+     height:150px;
+      
+      
+    }
+    .img-container img{
+        width: 100%;
+        height: 100%;
+    }
+
+/*end card styling*/
+.container h2{
+margin-left: 100px;
+}
+/*footer*/
+.footer{
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 52%);
+ 
+}
+/* start-modal*/
+.modal{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items:center;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff63;
+    
+    }
+    .cs-card{
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.3s;
+        width: 300px;;
+        background-color:white;
+        padding: 0px;
+        text-align : center
+    }
+    .cs-card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    
+    .cont-card {
+    padding-top: 10px;
+    
+        }
+        table{
+        width: 100%;
+        padding: 10px}
+       table th{
+       text-align: center;}
+    .cont-card button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    
+    margin: 0px;
+    margin-top: 10px;;
+    text-align: center;
+    color: white;
+    background-color:black;
+    outline: none;
+    border:none;
+    }
+/* end modal*/
+
+    </style>
+    <title>Github Brief</title>
+</head>
+<body>
+    <!-- start the header-->
+    <header>
+      <div class="header-container">
+          <h1>GitHub</h1>
+      </div>
+    </header>
+    <!-- End the header -->
+  
+    <!--Start Seach Input-->
+        <div class="search-container">
+            <div class="search-inp-btn">
+                <input type="text" placeholder="Search . . ." id="srch">
+                <button id="searchbtn"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+      <!--End Seach Input-->
+      <!--heading-->
+       <div class="container">
+           
+           <h2>Profilres</h2>
+       </div>
+       <!--Start responsive Cards -->
+       <div class="container" style="padding-top: 30px;">
+           <div class="row">
+                    <div class="col-md-2 col-md-push-2 col-xs-12">
+                        <div class="custom-card">
+                            <div class="img-container">
+                                <img src="test.jpg" class="usr-img" alt="">
+                            </div>
+                            <span class="usrname">Username</span>
+                        
+                        </div>
+                    </div>
+
+                    <div class=" col-md-2 col-md-push-2 col-xs-12">
+                        <div class="custom-card">
+                            <div class="img-container">
+                                <img src="test.jpg" class="usr-img" alt="">
+                            </div>
+                            <span class="usrname">Username</span>
+                        
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-md-push-2 col-xs-12 ">
+                        <div class="custom-card">
+                            <div class="img-container">
+                                <img src="test.jpg" class="usr-img" alt="">
+                            </div>
+                            <span class="usrname">Username</span>
+                        
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-md-push-2 col-xs-12 ">
+                        <div class="custom-card">
+                            <div class="img-container">
+                                <img src="test.jpg" class="usr-img" alt="">
+                            </div>
+                            <span class="usrname">Username</span>
+                        
+                        </div>
+                        
+                    </div>
+           
+           </div>
+       </div>
+       <!--- start modal-->
+       <div class="modal" >
+        <div class="cs-card">
+           
+        <img src="test.jpg" alt="Avatar" id="mdl-img" style="width:100% ;height: 300px;">
+        <span class="close">&times;</span>
+        <div class="cont-card">
+          <table>
+          <tr><th colspan="4" style="text-align: center; padding: 5px 0px 20px " id ="usrn">Username</th></tr>
+          <tr>
+          <th >Followers: </th>
+          <td id="Followers" style="color:green;"></td>
+          <th >Following:</th>
+          <td id="Following" style="color: brown;"></td>
+          
+          </tr>
+          </table>
+          <a href="" id="profi"><button href=>Profile</button> </a>
+        </div>
+      </div>
+      
+      </div>
+          
+   <!-- end  modal---> 
+  <div class="containe" style="position: relative; height: 164px;">
+   <div class="footer">
+       Copyright &copy; 2020
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script >
+	fetch("https://api.github.com/users")
+.then(Response => Response.json())
+.then(
+
+function (data)    {
+   var users_image = document.getElementsByClassName("usr-img");
+   var users_username = document.getElementsByClassName("usrname");
+
+for(i=0;i<users_image.length;i++){
+    users_image[i].src = data[i].avatar_url;
+    users_username[i].innerHTML = data[i].login;
+
+}
+} )
+// cal profile function 
+ 
+
+$(document).ready(function(){
+     
+
+    $("#searchbtn").click(function(){
+    
+      
+       var srch_inp= document.getElementById("srch").value;
+    var myrequest = new XMLHttpRequest();
+      myrequest.onreadystatechange = function(){
+              var info = this.responseText;
+              var jsonInfo =  JSON.parse(info);
+                
+        if(this.status===200){
+            document.getElementById("usrn").innerHTML =  jsonInfo.login;
+            document.getElementById("Followers").innerHTML =  jsonInfo.followers;
+            document.getElementById("Following").innerHTML =  jsonInfo.following;
+            document.getElementById("mdl-img").src= jsonInfo.avatar_url;
+            document.getElementsByClassName("modal")[0].style.display="flex";
+            document.getElementById("profi").href= jsonInfo.html_url;
+
+         console.log(jsonInfo)
+            
+        }
+
+
+      };
+      var lnk = "https://api.github.com/users/"+srch_inp;
+    myrequest.open('GET',lnk ,true);
+    myrequest.send()
+
+
+
+
+
+    })
+    $(".close").click(function(){
+
+      document.getElementsByClassName("modal")[0].style.display="none";
+    })
+})
+</script>
+
+</body>
+</html150
